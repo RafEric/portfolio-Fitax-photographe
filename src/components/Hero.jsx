@@ -9,12 +9,12 @@ export default function Hero() {
             EVENEMENT PHOTOGRAPHER
           </p>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-cormorant leading-tight">
            Bonjour , je suis Fitax <br />
           </h1>
-           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-          photographe professionnel  <br />
-          capturant des histoires à travers chaque image
+           <h1 className="text-1xl sm:text-4xl md:text-5xl font-cormorant leading-tight">
+              photographe professionnel  <br />
+              capturant des histoires à travers chaque image
           </h1>
           <div className="flex gap-4 pt-4">
             <button className="bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-full font-medium hover:scale-105 transition">
