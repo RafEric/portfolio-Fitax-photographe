@@ -9,10 +9,10 @@ export default function Hero() {
             EVENEMENT PHOTOGRAPHER
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight font-sans">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
            Bonjour , je suis Fitax <br />
           </h1>
-           <h1 className="text-5xl md:text-3xl font-semibold leading-tight font-sans">
+           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
           photographe professionnel  <br />
           capturant des histoires à travers chaque image
           </h1>
@@ -22,7 +22,7 @@ export default function Hero() {
             </button>
 
             <button className="border border-black dark:border-white px-6 py-3 rounded-full hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition">
-              Contact me
+              Contact moi
             </button>
           </div>
         </div>
