@@ -9,10 +9,10 @@ export default function Hero() {
             EVENEMENT PHOTOGRAPHER
           </p>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-cormorant leading-tight">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-cormorant leading-tight">
            Bonjour , je suis Fitax <br />
           </h1>
-           <h1 className="text-1xl sm:text-4xl md:text-5xl font-cormorant leading-tight">
+           <h1 className="text-1xl sm:text-3xl md:text-3xl font-cormorant leading-tight">
               photographe professionnel  <br />
               capturant des histoires à travers chaque image
           </h1>
