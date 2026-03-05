@@ -15,6 +15,7 @@ export default function Gallery() {
     { src: "/images/photo5.jpg", title: "Portrait Smile", category: "Portrait" },
     { src: "/images/photo6.jpg", title: "Nature Sunset", category: "Nature" },
     { src: "/images/photo7.jpg", title: "Wedding Moment", category: "Event" },
+    { src: "/images/photo8.jpg", title: "Wedding Moment", category: "Event" },
   ];
 
   const filteredImages =
@@ -23,7 +24,7 @@ export default function Gallery() {
       : images.filter((img) => img.category === selectedCategory);
 
   return (
-    <section
+    <section id="gallery"
       ref={ref}
       className={`bg-gray-100 dark:bg-gray-900 py-24 px-4 md:px-6 transition-colors duration-500 ${
         isVisible ? "animate-fadeUp" : ""
@@ -39,7 +40,7 @@ export default function Gallery() {
               My Gallery
             </h2>
             <p className="text-gray-700 dark:text-gray-400 mt-2 max-w-xl">
-              Here are some of my best shots showcasing urban lifestyle and creative photography.
+              Voici quelques-unes de mes meilleures photos illustrant le mode de vie urbain et la photographie créative.
             </p>
           </div>
 

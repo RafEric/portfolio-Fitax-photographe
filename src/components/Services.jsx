@@ -1,40 +1,73 @@
-import useScrollReveal from "../hooks/useScrollReveal";
-
 export default function Services() {
-  const [ref, visible] = useScrollReveal();
 
   const services = [
-    { title: "Mariage", desc: "Capture des moments uniques." },
-    { title: "Portrait", desc: "Portraits artistiques personnalisés." },
-    { title: "Événement", desc: "Couverture complète d'événements." }
+    {
+      titre: "Photographie Portrait",
+      desc: "Séances portraits professionnelles mettant en valeur votre personnalité avec une lumière naturelle.",
+      icon: "📸",
+    },
+    {
+      titre: "Photographie Événement",
+      desc: "Mariages, événements privés et professionnels capturés avec une approche artistique.",
+      icon: "🎉",
+    },
+    {
+      titre: "Photographie Urbaine",
+      desc: "Photos créatives de la ville mettant en valeur l’architecture et la vie urbaine.",
+      icon: "🏙️",
+    },
+    {
+      titre: "Photographie Nature",
+      desc: "Capturer la beauté des paysages et de la nature avec un style unique.",
+      icon: "🌿",
+    },
   ];
 
   return (
-    <section id="services" className="py-24 bg-white dark:bg-primary">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl text-center mb-16 dark:text-white">
-          Services
-        </h2>
+    <section id="services" className="bg-white dark:bg-gray-950 py-20 px-6">
 
-        <div
-          ref={ref}
-          className={`grid md:grid-cols-3 gap-8 transition-all duration-700 ${
-            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
+      <div className="max-w-[1200px] mx-auto">
+
+        {/* TITRE */}
+        <div className="text-center mb-16">
+
+          <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-semibold text-black dark:text-white">
+            Mes Services
+          </h2>
+
+          <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-xl mx-auto text-sm sm:text-base">
+            Je propose différents services de photographie pour capturer vos
+            moments importants et créer des images uniques.
+          </p>
+
+        </div>
+
+        {/* GRID */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-100 dark:bg-secondary p-8 rounded-xl text-center hover:scale-105 transition"
+              className="bg-gray-100 dark:bg-gray-900 p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center"
             >
-              <h3 className="text-2xl mb-4 dark:text-white">
-                {service.title}
+
+              <div className="text-4xl mb-4">{service.icon}</div>
+
+              <h3 className="font-cormorant text-xl sm:text-2xl font-semibold text-black dark:text-white">
+                {service.titre}
               </h3>
-              <p className="dark:text-white">{service.desc}</p>
+
+              <p className="text-gray-600 dark:text-gray-400 mt-3 text-sm sm:text-base">
+                {service.desc}
+              </p>
+
             </div>
           ))}
+
         </div>
+
       </div>
+
     </section>
   );
 }

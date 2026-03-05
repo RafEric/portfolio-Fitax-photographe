@@ -13,10 +13,10 @@ export default function Header() {
         {/* Menu desktop */}
         <nav className="hidden md:flex gap-6">
           <a href="#hero" className="hover:text-blue-500 transition">Home</a>
-          <a href="#about" className="hover:text-blue-500 transition">À propos</a>
-          <a href="#gallery" className="hover:text-blue-500 transition">Galerie</a>
-          <a href="#about" className="hover:text-blue-500 transition">service</a>
-          <a href="#gallery" className="hover:text-blue-500 transition">contact</a>
+          <a href="#About" className="hover:text-blue-500 transition">À propos</a>
+          <a href="#gallery" className="hover:text-blue-500 transition">Gallerie</a>
+          <a href="#services" className="hover:text-blue-500 transition">service</a>
+          <a href="#Contact" className="hover:text-blue-500 transition">contact</a>
         </nav>
 
         {/* Menu mobile burger */}
@@ -31,8 +31,11 @@ export default function Header() {
       {menuOpen && (
         <nav className="md:hidden bg-white dark:bg-gray-800 shadow-lg py-4 px-6 flex flex-col gap-4 transition-colors duration-300">
           <a href="#hero" className="hover:text-blue-500 transition" onClick={toggleMenu}>Home</a>
-          <a href="#about" className="hover:text-blue-500 transition" onClick={toggleMenu}>À propos</a>
+          <a href="#About" className="hover:text-blue-500 transition" onClick={toggleMenu}>À propos</a>
           <a href="#gallery" className="hover:text-blue-500 transition" onClick={toggleMenu}>Galerie</a>
+          <a href="#services" className="hover:text-blue-500 transition" onClick={toggleMenu}>services</a>
+          <a href="#Contact" className="hover:text-blue-500 transition" onClick={toggleMenu}>services</a>
+          
         </nav>
       )}
     </header>
